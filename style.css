@@ -63,10 +63,7 @@ ul li a{
     bottom: 0;
     left: 0;
 }
-.title::before {
-    background-color: #E02C6D;
-    animation: typewriter 5s ease-in forwards;
-}
+
 @keyframes typewriter {
     to {
         left: 100%;
@@ -93,6 +90,12 @@ ul li a{
     height: 414px;
     border: 1px solid rgba(105, 96, 96, 0.2);
     border-radius: 40%;
+}
+.cam-animation{
+    transition: transform 2s;
+}
+.cam-animation:hover {
+    transform: translate(-30px, -30px);
 }
 button{
     background-color: #E02C6D;
@@ -259,7 +262,7 @@ footer{
     text-align: center;
     padding: 20px;
 }
-/* responsive style 
+/* responsive style */
 @media (max-width: 992px) {
    nav {
        flex-direction: row;
@@ -312,6 +315,12 @@ footer{
     button{
         margin-bottom: 50px;
     }
+    .Influence-photo img{
+        width: 300px;
+        height: 300px;
+        border: 1px solid rgba(105, 96, 96, 0.2);
+        border-radius: 40%;
+    }
     .logo-items {
         grid-template-columns: repeat(3, 1fr);
         padding: 20px;
@@ -332,4 +341,4 @@ footer{
     .Instagram {
         grid-template-columns: repeat(1, 1fr);
     }
-}*/
+}
